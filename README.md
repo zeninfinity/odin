@@ -1,2 +1,2 @@
-# odin
-Odin Projects
+# Odin Projects
+*Great Odin's Raven!*
