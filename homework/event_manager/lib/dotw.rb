@@ -47,7 +47,7 @@ def save_thank_you_letter(id,form_letter)
   end
 end
 
-puts 'EventManager initialized.'
+puts 'DOTW initialized.'
 
 contents = CSV.open(
   'data/event_attendees.csv',
@@ -55,18 +55,18 @@ contents = CSV.open(
   header_converters: :symbol
 )
 
-@hours =[]
+@dotw=[]
 contents.each do |row|
   id = row[0]
   name = row[:first_name]
   regdate = row[:regdate]
 
   time = Time.strptime(regdate, "%m/%d/%Y %k:%M")
-  hour = time.strftime("%k")
-  @hours.append(hour)
+  dotw= time.wday 
+  @dotw.append(dotw)
 
 end
 
-for i in 0 .. 23
-  puts "#{i} #{@hours.count(i.to_s)}"
+for i in 0 .. 6
+  puts "#{i} #{@dotw.count(i)}"
 end
