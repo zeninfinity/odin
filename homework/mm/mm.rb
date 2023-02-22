@@ -1,17 +1,3 @@
-# To Do 
-# 
-# Fix @guess_results to have color results
-# Print board nicely.
-# Correct Color doesn't QUITE work when there is a perfect, and yet anotherone checks to see if it's been there before...  
-#
-# BUG
-# IE:  Secret:["W", "R", "W", "R"])
-# Guess:  WRWW
-# SHOULD be PPP-
-# Instead get ["P", "P", "P", "C"] - That C is because connects the last W to the first W even though it's already RIGHT.
-
-require 'pp'
-
 class Mastermind
   def initialize
     @total_turns=12
@@ -70,6 +56,7 @@ class Mastermind
 
   def turn_checker(turn)
     if (turn == @total_turns+1)
+      puts " "
       puts "\nYou have reached the #{@total_turns}th turn.  \nYou LOSE!  \nGAME OVER DUDE!  \nDo not pass go.  \nGo be sad!"
       exit
     else
