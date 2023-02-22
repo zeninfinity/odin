@@ -1,8 +1,23 @@
+# To Do 
+# 
+# Fix @guess_results to have color results
+# Print board nicely.
+# Correct Color doesn't QUITE work when there is a perfect, and yet anotherone checks to see if it's been there before...  
+#
+# BUG
+# IE:  Secret:["W", "R", "W", "R"])
+# Guess:  WRWW
+# SHOULD be PPP-
+# Instead get ["P", "P", "P", "C"] - That C is because connects the last W to the first W even though it's already RIGHT.
+
+require 'pp'
+
 class Mastermind
   def initialize
-    @totalturns=12
+    @total_turns=12
+    @guess_results=[]
     @color_map = {
-      0 =>  ["R","Red"],
+      0 => ["R","Red"],
       1 => ["B","Blue"],
       2 => ["Y","Yellow"],
       3 => ["G","Green"],
@@ -10,19 +25,16 @@ class Mastermind
       5 => ["K","Black"]
     }
     @master=create_master(@color_map)
-    puts "Welcome to Mastermind.  A new master code has been created (Secret:#{@master})"
+    puts "Welcome to Mastermind.  A new master code has been created." # (Secret:#{@master})"
+    puts "R=Red, B=Blue, Y=Yellow, G=Green, W=White, K=Black, P=Perfect, C=CorrectColor: "
   end
 
   def play
-    turn=0
-    while turn!=@totalturns
-      puts ""
-      puts "Turn:#{turn+1} \nEnter your 4 letter guess (R=Red, B=Blue, Y=Yellow, G=Green, W=White, K=Black):"
-      #until turn
-      guess=gets.chomp.split("")
-      check_guess(@master, guess, turn)
+    turn=1
+    while !turn_checker(turn)
+      until turn(turn)
+      end
       turn+=1
-      #end
     end
   end
 
@@ -34,22 +46,110 @@ class Mastermind
     return master
   end
 
-  def check_guess(master, guess, turn)
-    #Check if 4 chacters
-    #check if each guess is RBYGWK
-    
-    #checks guess against master
-    if (master == guess)
-      puts "You Win!"
-      exit
-    elsif turn+1 == @totalturns
-      puts "You have reached the #{@totalturns}th turn.  You LOSE!  GAME OVER!  Do not pass go.  Go be sad!"
+  def turn(turn)
+    puts " "
+    puts "Turn:#{turn} (#{@master.join})\nEnter 4 letter guess: "
+    guess=gets.chomp.split("")
+    guess_result=check_guess(@master, guess, turn)
+    print_board(@guess_results)
+
+    if guess_result
+      return true
     else
-      puts "Incorrect Guess"
+      return false
     end
+  end
+
+  def print_board(guess_results)
+    puts "---------------"
+    guess_results.each_with_index { |line, index|
+      puts "| #{index+1} #{line[0].join} #{line[1].join} | "
+    }
+    puts "---------------"
+  end
+
+  def turn_checker(turn)
+    if (turn == @total_turns+1)
+      puts "\nYou have reached the #{@total_turns}th turn.  \nYou LOSE!  \nGAME OVER DUDE!  \nDo not pass go.  \nGo be sad!"
+      exit
+    else
+      return false
+    end
+
+  end
+
+  def check_guess(master, guess, turn)
+    #Check if 4 characters
+    if guess.length != 4
+      puts "Guess not 4 digits"
+      return false
+    end
+
+    #Check all are in @colors_map - RBYGWK
+    guess.each { |g|
+      good_color_count=@color_map.select {|index, color| color[0]==g }.count
+      if good_color_count != 1
+        puts "Guess not all colors (RBYGWK), try again."
+        return false
+      end
+    }
+
+    # Ok, 4 characters, all correct
+    
+    # Checks guess against master
+    check_win(master,guess)
+
+    ##Check How close
+    color_results=check_color(master, guess)
+
+    # Add to Guesses
+    @guess_results << [guess, color_results]
+    return true
   end
 end
 
-mmgame=Mastermind.new.play
-#mmgame.play
+def check_win(master,guess)
+  if (master == guess)
+      puts "-----------------------"
+      puts "| Holy Shit, You Win! | "
+      puts "-----------------------"
+      exit
+  end
+end
 
+def check_color(master, guess)
+  color_results = Array.new(4)
+  master_reduce=master.dup
+
+  # Correct location
+  guess.each_with_index { | g, index |
+    if g==master[index]
+      color_results[index] = "P"
+      master_reduce[index] = "-"
+    end
+  }
+
+  # Correct Color
+  guess.each_with_index { | g, index |
+    if g!=master[index]
+      if master_reduce.include? g
+        color_results[index] = "C"
+        master_reduce[master_reduce.find_index(g)] = "-"
+      else
+        color_results[index] = "-"
+      end
+    end
+  }
+
+  return color_results.sort.reverse!
+end
+
+def format_results(correct_location, correct_color)
+  array=[]
+  correct_location.times{array << "P"}
+  correct_color.times{array << "C"}
+  (4-correct_location-correct_color).times{array << "-"}
+  return array
+end
+
+mmgame=Mastermind.new.play
