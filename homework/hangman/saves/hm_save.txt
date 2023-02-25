@@ -1,0 +1,5 @@
+@turn=2
+@word=["B", "L", "O", "G", "G", "I", "N", "G"]
+@wrongs=0
+@letters_picked=["B"]
+@guesses=["B", nil, nil, nil, nil, nil, nil, nil]
