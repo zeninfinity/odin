@@ -1,3 +1,5 @@
+require 'json'
+
 class Hangman 
 
   def initialize
@@ -152,35 +154,17 @@ class Hangman
   def save_load_game(sl)
     Dir.mkdir(@dir) unless Dir.exist?(@dir)
     if sl=="1"
-      # Get current saves
-     
-      # Enter ID of save location
-
       # Save to File
       filename = "saves/hm_save.txt"
-      File.open(filename, 'w') do |file|
-        file.puts "@turn=#{@turn}\n@word=#{@word}\n@wrongs=#{@wrongs}\n@letters_picked=#{@letters_picked}\n@guesses=#{@guesses}"
-      end
+
+      File.write(filename, JSON.generate([@turn, @word, @wrongs, @letters_picked, @guesses]))
       puts " "
       puts "SAVE GAME"
     else
-      # Get all files
-
-      # Print all files
-
-      # Get input for which file to load
       
       # Load File
       filename = "saves/hm_save.txt"
-      File.readlines(filename).each do |line| 
-        # vars=line.split("=")
-        # puts "#{line}"
-        instance_variable_set(line.split("=")[0], line.split("=")[1].gsub(/\/\//, "").chomp)
-        p @word
-        p @guesses
-
-      end
-
+      @turn, @word, @wrongs, @letters_picked, @guesses = JSON.parse(File.read(filename))
       puts " "
       puts "LOAD GAME"
     end
