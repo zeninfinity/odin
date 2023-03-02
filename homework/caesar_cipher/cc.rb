@@ -5,7 +5,7 @@ def caesar_cipher(string, shift)
   string.split('').each do |letter| 
     if letter.match?(/[[:alpha:]]/)
       upper = (letter == letter.upcase)
-      position=(alpha26.index(letter.downcase))+5
+      position=(alpha26.index(letter.downcase))+shift
       if position > 25 then position = position-26 end 
       newlet = alpha26[position]
       # puts "#{letter} #{position} #{upper} #{newlet}"
@@ -15,8 +15,7 @@ def caesar_cipher(string, shift)
       newline+=letter
 		end
   end
-  p newline
+  return newline
 end
 
-puts caesar_cipher("What a string!", 5)
-
+#puts caesar_cipher("What a string!", 5)
