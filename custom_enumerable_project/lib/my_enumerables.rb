@@ -8,4 +8,7 @@ end
 # to this method
 class Array
   # Define my_each here
+  def my_each(arr)
+    return arr
+  end
 end
