@@ -1,5 +1,6 @@
 
 config/credentials.yml.enc
+config/credentials.yml.enc
 *.rbc
 capybara-*.html
 .rspec
