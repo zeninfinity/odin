@@ -13,3 +13,521 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 36ms (Views: 31.0ms | ActiveRecord: 0.0ms | Allocations: 1276)
 
 
+Started GET "/" for ::1 at 2023-03-12 13:27:26 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/z/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/z/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.3ms | Allocations: 418)
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 3123)
+
+
+Started GET "/" for ::1 at 2023-03-12 13:27:27 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/z/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/z/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.5ms | Allocations: 222)
+Completed 200 OK in 22ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 981)
+
+
+Started GET "/articles" for ::1 at 2023-03-12 13:27:40 +0700
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 109)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/z/git/ruby/odin/blog/public/packs
+[Webpacker] Hash: 804a8059a304061a3e74
+Version: webpack 4.46.0
+Time: 781ms
+Built at: 03/12/2023 1:27:43 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-271cf8931bb708d2d8bb.js    121 KiB  application  [emitted] [immutable]  application
+js/application-271cf8931bb708d2d8bb.js.map    133 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-271cf8931bb708d2d8bb.js js/application-271cf8931bb708d2d8bb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 493 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3222.5ms | Allocations: 14877)
+Completed 200 OK in 3247ms (Views: 3224.7ms | ActiveRecord: 0.0ms | Allocations: 16122)
+
+
+Started GET "/" for ::1 at 2023-03-12 13:28:03 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 295)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.2ms | Allocations: 6368)
+Completed 200 OK in 70ms (Views: 65.8ms | ActiveRecord: 0.0ms | Allocations: 9584)
+
+
+Started GET "/" for ::1 at 2023-03-12 13:28:05 +0700
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3535)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3983)
+
+
+Started GET "/" for ::1 at 2023-03-12 13:28:06 +0700
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 3528)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 3968)
+
+
+Started GET "/" for ::1 at 2023-03-12 13:28:37 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 295)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 6397)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 9514)
+
+
+Started GET "/" for ::1 at 2023-03-12 13:28:38 +0700
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3531)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 4008)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateArticles (20230312063111)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "articles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230312063111"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-12 06:32:32.450903"], ["updated_at", "2023-03-12 06:32:32.450903"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (1.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Hello Rails"], ["body", "I am on Rails!"], ["created_at", "2023-03-12 06:32:58.246094"], ["updated_at", "2023-03-12 06:32:58.246094"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2023-03-12 13:34:22 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 34.8ms | Allocations: 4198)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 10267)
+Completed 200 OK in 52ms (Views: 45.7ms | ActiveRecord: 0.7ms | Allocations: 13929)
+
+
+Started GET "/" for ::1 at 2023-03-12 13:34:52 +0700
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 851)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 4579)
+Completed 200 OK in 59ms (Views: 49.8ms | ActiveRecord: 0.1ms | Allocations: 5839)
+
+
+Started GET "/" for ::1 at 2023-03-12 13:35:00 +0700
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 840)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 4568)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.2ms | Allocations: 5813)
+
+
+Started GET "/" for ::1 at 2023-03-12 13:35:08 +0700
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 826)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 4554)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 0.2ms | Allocations: 5808)
+
+
+Started GET "/articles/1" for ::1 at 2023-03-12 13:35:59 +0700
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for ArticlesController
+Did you mean?  index):
+  
+actionpack (6.1.7.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.6.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-03-12 13:36:02 +0700
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/articles/index.html.erb:4
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 4062)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 7619)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 1.5ms | Allocations: 8670)
+
+
+Started GET "/articles/1" for ::1 at 2023-03-12 13:36:05 +0700
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for ArticlesController
+Did you mean?  index):
+  
+actionpack (6.1.7.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.6.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/articles" for ::1 at 2023-03-12 13:36:07 +0700
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 684)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 4184)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.3ms | Allocations: 4636)
+
+
+Started GET "/articles/1" for ::1 at 2023-03-12 13:36:10 +0700
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for ArticlesController
+Did you mean?  index):
+  
+actionpack (6.1.7.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.6.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/articles/1" for ::1 at 2023-03-12 13:36:42 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/articles_controller.rb:6:in `show'
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:6:in `show'
+Completed 406 Not Acceptable in 14ms (ActiveRecord: 2.0ms | Allocations: 6697)
+
+
+  
+ActionController::MissingExactTemplate (ArticlesController#show is missing a template for request formats: text/html):
+  
+actionpack (6.1.7.2) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.7.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.7.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.7.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.7.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.7.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.7.2) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.7.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.7.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.7.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.7.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.7.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.7.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.7.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.7.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.6.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/articles/1" for ::1 at 2023-03-12 13:36:59 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 153)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3890)
+Completed 200 OK in 20ms (Views: 12.7ms | ActiveRecord: 0.4ms | Allocations: 5670)
+
+
+Started GET "/articles/1" for ::1 at 2023-03-12 13:37:25 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 141)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3868)
+Completed 200 OK in 21ms (Views: 13.6ms | ActiveRecord: 0.7ms | Allocations: 5636)
+
+
+Started GET "/articles/" for ::1 at 2023-03-12 13:37:27 +0700
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 4372)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.4ms | Allocations: 4957)
+
+
+Started GET "/articles/1" for ::1 at 2023-03-12 13:37:29 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 160)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 3650)
+Completed 200 OK in 20ms (Views: 15.2ms | ActiveRecord: 0.2ms | Allocations: 5159)
+
+
